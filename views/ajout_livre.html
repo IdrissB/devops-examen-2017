@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+head
+	title Ajout livre
+	body
+		form(action='/books/new', method='POST')
+			p Entrer l'ISBN du livre : 
+			input(type="text", name="isbn", value="")
+			p Entrer le titre du livre : 
+			input(type="text", name="titre", value="")
+			p Entrer l'auteur du livre : 
+			input(type="text", name="auteur", value="")
+			p Entrer la date d'achat : 
+			input(type="date", name="dateAchat", value="")
+			p Choisir l'etat du livre : 
+			<select name="etat">
+				<option value="neuf">Neuf</option>
+				<option value="bon etat">Bon etat</option>
+				<option value="abime">abime</option>
+			</select>
+			p Choisir la thématique du livre : 
+			<select name="theme">
+				<option value="Science-fiction">Science-fiction</option>
+				<option value="Thriller">Thriller</option>
+				<option value="Fantastique">Fantastique</option>
+				<option value="Romance">Romance</option>
+			</select>
+			p
+			input(type="submit", value="submit")
+			
+			<a href="/books">Retour</a>

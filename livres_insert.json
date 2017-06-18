@@ -1,0 +1,26 @@
+[
+  {
+    "_isbn": "1214526368951",
+    "titre": "La nuit des temps",
+	"auteur": "Rene Barjavel",
+    "dateAchat": "15/06/2017",
+    "etat": "neuf",
+	"theme": "science-fiction"
+  },
+  {
+    "_isbn": "1462387568951",
+    "titre": "Les fourmis",
+	"auteur": "Werber",
+    "dateAchat": "23/05/2017",
+    "etat": "bon etat",
+	"theme": "thriller"
+  },
+  {
+    "_isbn": "1974125868951",
+    "titre": "H2G2",
+	"auteur": "Douglas Adams",
+    "dateAchat": "01/06/2017",
+    "etat": "abime",
+	"theme": "science-fiction"
+  }
+]

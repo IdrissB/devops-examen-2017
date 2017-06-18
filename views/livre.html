@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+	head
+		Livres
+	body
+		<h1>#{livre.titre}</h1>
+		<h2>Auteur</h2>
+		p #{livre.auteur}
+		<h2>Theme</h2>
+		p #{livre.theme}
+		<h2>Etat</h2>
+		p #{livre.etat}
+		<h2>Date Achat</h2>
+		p #{livre.dateAchat}
+		form(action='/books/pret/#{livre._id}', method='POST')
+			p 
+			<h2>Remplissez les champs suivants afin d'emprunter un livre</h2>
+			p
+			input(type="text", placeholder="Saisisser votre nom", name="nom")
+			p
+				input(type="date", placeholder="Saisisser la date", name="datePret")
+			p
+				input(type="submit", value="Emprunter")
+		<a href="/livres">Retour</a>
+		<a href="/livres/delete/#{livre._id}">Supprimer</a>
